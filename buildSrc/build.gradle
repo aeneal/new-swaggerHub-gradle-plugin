@@ -1,0 +1,20 @@
+plugins {
+    id 'groovy'
+    id 'java'
+}
+
+group 'com.aeneal.swaggerHub'
+version '0.0.1-RC1'
+
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile gradleApi()
+    compile group: 'io.swagger.parser.v3', name: 'swagger-parser', version: '2.0.12'
+    
+    compile group: 'org.codehaus.groovy', name: 'groovy-all', version: '2.5.4', ext: 'pom'
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+}
